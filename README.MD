@@ -41,7 +41,6 @@ FirstSource Health is a web application designed to give parents fast, reliable 
                                                  |  (Node.js)        |
                                                  |  /api/articles    |
                                                  |  /api/myths       |
-                                                 |  /api/auth        |
                                                  +-------------------+
                                                           |
                                                           | SQL Queries
@@ -114,6 +113,7 @@ psql -U postgres -c "CREATE DATABASE firstsourcehealth;"
 ```
 
 ### 6. Run the schema and seed scripts
+From the **backend** directory (so the `db/` path resolves correctly):
 ```bash
 psql -U postgres -d firstsourcehealth -f db/schema.sql
 psql -U postgres -d firstsourcehealth -f db/seed.sql
